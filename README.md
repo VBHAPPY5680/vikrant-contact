@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -145,7 +145,8 @@
   <script>
     function saveNote() {
       const note = document.getElementById("note").value.trim();
-      if(note) {
+      if (note) {
+        // Just show an alert locally
         alert("Your note has been recorded:\n\n" + note);
         document.getElementById("note").value = "";
       } else {
