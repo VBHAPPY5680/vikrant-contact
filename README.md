@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -7,115 +7,22 @@
   <meta name="theme-color" content="#007BFF" />
   <title>Contact Vikrant Sharma</title>
   
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #007BFF, #0056b3);
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .card {
-      background-color: #ffffff10;
-      padding: 30px 40px;
-      border-radius: 15px;
-      text-align: center;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      backdrop-filter: blur(10px);
-      max-width: 360px;
-      width: 90%;
-      animation: fadeInUp 0.8s ease;
-    }
-
-    .icon {
-      font-size: 80px;
-      color: #fff;
-      background-color: rgba(255, 255, 255, 0.2);
-      border-radius: 50%;
-      padding: 25px;
-      margin-bottom: 20px;
-    }
-
-    .card h1 {
-      font-size: 1.6em;
-      margin: 10px 0;
-      color: #fff;
-    }
-
-    .contact-links a {
-      display: inline-block;
-      margin: 10px 5px;
-      padding: 10px 15px;
-      border-radius: 8px;
-      background: #FFD700;
-      color: #0056b3;
-      font-weight: 600;
-      text-decoration: none;
-      transition: 0.3s ease;
-    }
-
-    .contact-links a:hover {
-      background: #fff;
-      color: #007BFF;
-      transform: scale(1.05);
-    }
-
-    /* Notes section */
-    .notes {
-      margin-top: 20px;
-      text-align: left;
-    }
-
-    .notes label {
-      font-weight: 600;
-      display: block;
-      margin-bottom: 5px;
-      color: #FFD700;
-    }
-
-    .notes textarea {
-      width: 100%;
-      padding: 10px;
-      border-radius: 8px;
-      border: none;
-      resize: none;
-      font-family: inherit;
-      font-size: 14px;
-      outline: none;
-    }
-
-    .notes button {
-      margin-top: 10px;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 8px;
-      background: #FFD700;
-      color: #0056b3;
-      font-weight: 600;
-      cursor: pointer;
-      transition: 0.3s ease;
-    }
-
-    .notes button:hover {
-      background: #fff;
-      color: #007BFF;
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+    body { margin: 0; padding: 0; font-family: 'Poppins', sans-serif; background: linear-gradient(135deg, #007BFF, #0056b3); color: #fff; display: flex; justify-content: center; align-items: center; height: 100vh; }
+    .card { background-color: #ffffff10; padding: 30px 40px; border-radius: 15px; text-align: center; box-shadow: 0 8px 20px rgba(0,0,0,0.2); backdrop-filter: blur(10px); max-width: 360px; width: 90%; animation: fadeInUp 0.8s ease; }
+    .icon { font-size: 80px; color: #fff; background-color: rgba(255,255,255,0.2); border-radius: 50%; padding: 25px; margin-bottom: 20px; }
+    .card h1 { font-size: 1.6em; margin: 10px 0; color: #fff; }
+    .contact-links a { display: inline-block; margin: 10px 5px; padding: 10px 15px; border-radius: 8px; background: #FFD700; color: #0056b3; font-weight: 600; text-decoration: none; transition: 0.3s ease; }
+    .contact-links a:hover { background: #fff; color: #007BFF; transform: scale(1.05); }
+    .notes { margin-top: 20px; text-align: left; }
+    .notes label { font-weight: 600; display: block; margin-bottom: 5px; color: #FFD700; }
+    .notes textarea { width: 100%; padding: 10px; border-radius: 8px; border: none; resize: none; font-family: inherit; font-size: 14px; outline: none; }
+    .notes button { margin-top: 10px; padding: 10px 15px; border: none; border-radius: 8px; background: #FFD700; color: #0056b3; font-weight: 600; cursor: pointer; transition: 0.3s ease; }
+    .notes button:hover { background: #fff; color: #007BFF; }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
   </style>
 </head>
 <body>
@@ -123,18 +30,11 @@
     <i class="fas fa-user icon" aria-hidden="true"></i>
     <h1>Vikrant Sharma</h1>
     <div class="contact-links">
-      <a href="https://wa.me/7018708803" target="_blank" aria-label="Chat on WhatsApp">
-        <i class="fab fa-whatsapp"></i> WhatsApp
-      </a>
-      <a href="tel:+917018708803" aria-label="Call Vikrant Sharma">
-        <i class="fas fa-phone"></i> Call
-      </a>
-      <a href="mailto:vikrant@example.com" aria-label="Email Vikrant Sharma">
-        <i class="fas fa-envelope"></i> Contact Me
-      </a>
+      <a href="https://wa.me/7018708803" target="_blank" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="tel:+917018708803" aria-label="Call Vikrant Sharma"><i class="fas fa-phone"></i> Call</a>
+      <a href="mailto:vikrantsharma5680@gmail.com" aria-label="Email Vikrant Sharma"><i class="fas fa-envelope"></i> Contact Me</a>
     </div>
 
-    <!-- Notes Section -->
     <div class="notes">
       <label for="note">Leave a Note:</label>
       <textarea id="note" rows="4" placeholder="Write your message here..."></textarea>
@@ -145,6 +45,11 @@
   <script>
     const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzfTH9_PizE2XFozkRNaC-ADsoTTR_dOmOhbU-3c_xJM9wjl_vJ1TU_QWXgoTN7l2WJrA/exec";
 
+    // Simple random user ID generator
+    function generateUserId() {
+      return 'user-' + Math.random().toString(36).substr(2, 9);
+    }
+
     function saveNote() {
       const note = document.getElementById("note").value.trim();
       if (!note) {
@@ -152,10 +57,17 @@
         return;
       }
 
+      const userId = generateUserId();
+      const ipAddress = "Unknown"; // optional
+
       fetch(WEB_APP_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ note: note })
+        body: JSON.stringify({
+          note: note,
+          userId: userId,
+          ipAddress: ipAddress
+        })
       })
       .then(response => response.json())
       .then(data => {
@@ -163,7 +75,7 @@
         document.getElementById("note").value = "";
       })
       .catch(error => {
-        console.error(error);
+        console.error("Error sending note:", error);
         alert("Error sending note. Please try again.");
       });
     }
