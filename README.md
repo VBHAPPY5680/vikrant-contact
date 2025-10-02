@@ -1,5 +1,4 @@
-
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -144,17 +143,30 @@
   </div>
 
   <script>
+    const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxWiLY7U8bbcGl1OPfC7PCq6Gd5bPXgxor-bIGQeVjOJJ_Ho2hzSeMcEouFsiaxgdVXpQ/exec";
+
     function saveNote() {
       const note = document.getElementById("note").value.trim();
-      if(note) {
-        alert("Your note has been recorded:\n\n" + note);
-        document.getElementById("note").value = "";
-      } else {
+      if (!note) {
         alert("Please write something before sending!");
+        return;
       }
+
+      fetch(WEB_APP_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ note: note })
+      })
+      .then(response => response.json())
+      .then(data => {
+        alert(data.message || "Your note has been sent!");
+        document.getElementById("note").value = "";
+      })
+      .catch(error => {
+        console.error(error);
+        alert("Error sending note. Please try again.");
+      });
     }
   </script>
 </body>
 </html>
-
-
