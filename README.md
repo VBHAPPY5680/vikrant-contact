@@ -143,7 +143,7 @@
   </div>
 
   <script>
-    const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzfTH9_PizE2XFozkRNaC-ADsoTTR_dOmOhbU-3c_xJM9wjl_vJ1TU_QWXgoTN7l2WJrA/exec";
+    const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxWiLY7U8bbcGl1OPfC7PCq6Gd5bPXgxor-bIGQeVjOJJ_Ho2hzSeMcEouFsiaxgdVXpQ/exec";
 
     function saveNote() {
       const note = document.getElementById("note").value.trim();
